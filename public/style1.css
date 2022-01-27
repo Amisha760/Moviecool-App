@@ -1,0 +1,39 @@
+body{
+    background-image: url(https://intheactstudios.com/assets/home/images/mobile_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 1700px;
+    width: 100%;
+   
+}
+.searchejs{
+    text-align: center;
+    margin: 300px;
+    
+}
+p{
+    font-size: 90px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input[type=text], select {
+  width: 60%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+  }
+ 
+#button{
+ 
+  background-color:darkgoldenrod;
+    padding: 12px 20px;
+    margin: 6px 0;
+   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  

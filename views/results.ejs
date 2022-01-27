@@ -1,0 +1,31 @@
+<%- include("partial/header") %>
+
+
+  <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+    <%data["results"].forEach(function(movie){%>
+      <div class="col-md-3 col-sm-6" id="movie">
+        <div class="movie-card" >
+          <div class="img"><img src=<%="https://image.tmdb.org/t/p/w300/" +movie.poster_path%>></div>
+           <div id="w">  
+          <div class="movie_info"> <strong>
+              <p>
+                <%=movie["original_title"]%>
+              </p>
+              <p class="ratings">
+                <%=movie["popularity"]%>
+            </strong></p>
+          </div>
+          <p class="overview">OverView</p>
+          <p >
+            
+            <%=movie["overview"]%>
+          </p>
+
+         
+</div>
+        </div>
+      </div>
+
+      <%})%>
+  </div>
+  <%- include("partial/footer") %>
