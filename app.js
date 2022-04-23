@@ -4,7 +4,7 @@ var request=require("request");
 const path=require("path");
 app.use(express.static(path.join(__dirname,'public')));
 app.set("view engine","ejs");
-
+const PORT=process.env.PORT || 3000;
 
 app.get("/",function(req,res){
     res.render("search");
@@ -13,7 +13,7 @@ app.get("/results",function(req,res){
     var searchName=req.query.search;
 
   
-    request("https://api.themoviedb.org/3/search/movie?api_key=16e9a955599ce36c7234403ff8d6a8dc&query="+searchName,function(error,response,body){
+    request("https://api.themoviedb.org/3/search/movie?api_key=16e9a955599ce36c7234403ff8d6a8dc&query="+searchName,function(error,response,body){//sucess
    
         if(!error && response.statusCode==200)
         {
@@ -25,4 +25,4 @@ app.get("/results",function(req,res){
         }
     })
 })
-app.listen(3000);
+app.listen(PORT);

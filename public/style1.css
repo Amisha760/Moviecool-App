@@ -3,11 +3,14 @@ body{
     background-repeat: no-repeat;
     background-size: 1700px;
     width: 100%;
+    overflow-y: hidden;
+    overflow: hidden;
    
 }
 .searchejs{
     text-align: center;
     margin: 300px;
+
     
 }
 p{
